@@ -10,7 +10,10 @@ end
 
 def long_planeteer_calls(array)
   array.any? do |x|
-    x.length > 4
+    if x.size > 4
+      true
+    else 
+      false
   end
 end
 
